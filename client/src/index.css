@@ -787,12 +787,12 @@ input, select, textarea{
     top: 5rem;
     right: 0;
     flex-direction: column;
-    gap: 0;
+    gap: 0.7px;
   }
 
   .nav__menu li {
     width: 100%;
-    box-shadow: -2rem 4rem 4rem rgba(0, 0, 0, 0.26);
+    /* box-shadow: -2rem 4rem 4rem rgba(0, 0, 0, 0.26); */
     animation: dropDown 500ms ease forwards;
     opacity: 0;
     transform: rotateX(90deg);
