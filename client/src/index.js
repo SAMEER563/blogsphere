@@ -18,7 +18,7 @@ import AuthorPosts from './pages/AuthorPosts'
 import Dashboard from './pages/Dashboard'
 import Logout from './pages/Logout'
 import UserProvider from './context/userContext';
-
+import ForgotPassword from './pages/ForgotPassword';
 
 
 
@@ -42,6 +42,7 @@ const router = createBrowserRouter([
     {path: "posts/users/:id", element: <AuthorPosts />},
     {path: "myposts/:id", element: <Dashboard />},
     {path: "logout", element: <Logout />},
+    {path: "forgot-password", element: <ForgotPassword />},
    ]
   }
 ])
