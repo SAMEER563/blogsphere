@@ -252,6 +252,40 @@ const getAuthors = async (req, res, next) => {
 }
 
 
+// ======================== Forgot Password ============//
+// POST : api/users/forgot-password
+// PROTECTED
+
+const forgotPassword = async (req, res, next) => {
+   try {
+    const {email} = req.body;
+    if(!email) {
+        return next(new HttpError("Please enter your email.", 422))
+    }
+
+    // find user with email
+    const user = await User.findOne({email});
+    if(!user) {
+        return next(new HttpError("User not found.", 404))
+    }
+
+    // generate token
+    const token = jwt.sign({id: user._id}, process.env.JWT_SECRET, {expiresIn: "1h"})
+    // send email to user
+    const resetLink = `${process.env.CLIENT_URL}/reset-password/${token}`
+    // send email
+    const message = `
+        <h1>Reset Password</h1>
+        <p>Click the link below to reset your password</p>
+        <a href="${resetLink}" target="_blank">Reset Password</a>
+    `
+    // send email
+    res.status(200).json({message: "Reset link sent to your email."})
+
+   } catch (error) {
+    return next(new HttpError(error))
+   }
+}
 
 
 
@@ -259,4 +293,4 @@ const getAuthors = async (req, res, next) => {
 
 
 
-module.exports = {registerUser, loginUser, getUser, changeAvatar, editUser, getAuthors}
+module.exports = {registerUser, loginUser, getUser, changeAvatar, editUser, getAuthors, forgotPassword}
