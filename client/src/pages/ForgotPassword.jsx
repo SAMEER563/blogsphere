@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import axios from 'axios'
 
 
@@ -23,12 +23,16 @@ const ForgotPassword = () => {
     });
   };
 
+  
+  const {currentUser} = useContext(UserContext)
+  const token = currentUser?.token;
+
 
   const loginUser = async(e) => {
     e.preventDefault();
     setError('')
     try {
-      const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/users/forgot-password`, userData);
+      const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/users/forgot-password`, {withCredentials: true, headers: {Authorization: `Bearer ${token}`}} );
       const user = await response.data;
       setCurrentUser(user)
       navigate('/')
