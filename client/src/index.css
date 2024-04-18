@@ -146,11 +146,11 @@
 
 body{
   font-family: "Poppins", sans-serif;
-  background: var(--color-bg);
+  /* background: var(--color-bg); */
   font-size: 0.9rem;
   line-height: 1.6;
   color: var(--color-gray-700);
-
+  background: radial-gradient(circle at 10% 20%, rgb(222, 168, 248) 0%, rgb(168, 222, 248) 21.8%, rgb(189, 250, 205) 35.6%, rgb(243, 250, 189) 52.9%, rgb(250, 227, 189) 66.8%, rgb(248, 172, 172) 90%, rgb(254, 211, 252) 99.7%);
 }
 
 
@@ -313,6 +313,8 @@ nav{
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding:16px;
+
 }
 
 
@@ -780,6 +782,7 @@ input, select, textarea{
 
   .nav__container {
     position: relative;
+
   }
 
   .nav__menu {
