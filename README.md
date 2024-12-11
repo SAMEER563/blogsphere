@@ -6,7 +6,8 @@
 This project is a blog writing website built using the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to register, log in, and create, edit, and delete blog posts. The website offers a simple, user-friendly interface and is fully responsive.
  <br/>
 
-![Screenshot 2024-05-25 111347](https://github.com/user-attachments/assets/b6b996af-3f13-442d-b0da-2a5d2fdb59f7)
+![Screenshot 2024-05-25 112208](https://github.com/user-attachments/assets/6153f9a6-1f66-45e4-88af-41ab2f7daf74)
+
 
 
 <h3>Features</h3>
