@@ -96,14 +96,7 @@ cd client <br/>
 npm start
 
 
+![Screenshot 2024-05-25 111211](https://github.com/user-attachments/assets/9a3264a2-5481-45e0-95a6-98dfe48b05c1)
 
 
-
-
-
-
-
-
-REACT_APP_BASE_URL="http://localhost:5000/api"
-REACT_APP_ASSETS_URL="http://localhost:5000"
 
