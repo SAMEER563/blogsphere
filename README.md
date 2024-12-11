@@ -72,15 +72,20 @@ MONGO_URI=your_mongodb_connection_string <br/>
 JWT_SECRET=your_jwt_secret_key
 <br/>
 <h3>4. Install Frontend Dependencies</h3>
-Navigate to the frontend folder and install the necessary dependencies:
+Navigate to the frontend folder and install the necessary dependencies:  <br/>
 cd ../client  <br/>
 npm install
  <br/>
 
-<h3>5. Start the Development Servers</h3>
+ <h3>5. Set Up Environment Variables</h3>
+In the backend folder, create a .env file with the following variables: <br/>
+REACT_APP_BASE_URL="your URL" <br/>
+REACT_APP_ASSETS_URL="your URL"
+
+<h3>6. Start the Development Servers</h3>
 Now, start both the backend and frontend servers:
 
-Backend: Navigate to the backend folder and run:
+Backend: Navigate to the backend folder and run:  <br/>
 cd server  <br/>
 npm run dev
 
