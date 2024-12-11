@@ -5,6 +5,9 @@
 <h3>Overview</h3>
 This project is a blog writing website built using the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to register, log in, and create, edit, and delete blog posts. The website offers a simple, user-friendly interface and is fully responsive.
 
+![Screenshot 2024-05-25 111347](https://github.com/user-attachments/assets/b6b996af-3f13-442d-b0da-2a5d2fdb59f7)
+
+
 <h3>Features</h3>
 User Authentication: Users can register, log in, and log out. <br/>
 Blog Management: Users can create, edit, and delete their blog posts.<br/>
@@ -45,4 +48,29 @@ Before you begin, make sure you have the following installed:
 Node.js (which comes with npm) <br/>
 MongoDB (or a MongoDB Atlas account if using a cloud database) <br/>
 Git (optional for cloning the repository)
-Setting up the Project
+
+<br/>
+
+<h2>Setting up the Project</h2>
+<h3>1. Clone the Repository</h3>
+Clone the repository to your local machine: 
+git clone https://github.com/SAMEER563/blogsphere.git
+
+<br/> 
+
+<h3>2. Install Backend Dependencies</h3>
+Navigate to the backend folder and install the necessary dependencies:
+
+cd server
+npm install
+
+
+<br/>
+
+<h3>3. Set Up Environment Variables</h3>
+In the backend folder, create a .env file with the following variables:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+
