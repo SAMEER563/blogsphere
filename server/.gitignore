@@ -1,0 +1,42 @@
+# Node.js dependencies
+/node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+logs
+*.log.*
+
+# npm package lock files (optional - usually fine to keep)
+# package-lock.json
+# yarn.lock
+
+# Build output directories
+/dist
+/build
+
+# Temporary or system files
+.DS_Store
+Thumbs.db
+
+# IDE/editor specific files
+/.vscode/
+/.idea/
+/*.sublime-workspace
+/*.sublime-project
+
+# Coverage reports (from testing frameworks like Jest)
+/coverage
+
+# React build files
+/.next/
+/out/
+
+# TypeScript or JavaScript transpiled files (if using Babel)
+/lib/
+/es/
+
+# PM2 logs (if running the project via PM2 for production)
+pm2-log.json
