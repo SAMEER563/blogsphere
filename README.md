@@ -5,6 +5,7 @@
 <h3>Overview</h3>
 This project is a blog writing website built using the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to register, log in, and create, edit, and delete blog posts. The website offers a simple, user-friendly interface and is fully responsive.
  <br/>
+ 🌐 **[Check out my live website here](https://blog.nearestsolution.com/)**
 
 ![Screenshot 2024-05-25 112208](https://github.com/user-attachments/assets/6153f9a6-1f66-45e4-88af-41ab2f7daf74)
 
